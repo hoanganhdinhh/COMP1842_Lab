@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<body>
+    <p>Enter input 1: <input id="input1" type="text"></p>
+    <p>Enter input 2: <input id="input2" type="text"></p>
+    <button onclick="calcBMI()">Calculate BMI</button>
+    <p id="newResult"></p>
+
+    <script>
+        function calcBMI(){
+            let newInput1 = Number(document.getElementById("input1").value);
+            let newInput2 = Number(document.getElementById("input2").value);
+            let newBMI = newInput1 / (newInput2 * newInput2);
+            document.getElementById("areaCalc").innerText = "The BMI is: " + newBMI;
+        }
+
+    </script>
+</body>
+</html>
