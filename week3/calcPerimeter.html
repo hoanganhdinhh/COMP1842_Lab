@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<body>
+    <p>Enter input 1: <input id="input1" type="text"></p>
+    <p>Enter input 2: <input id="input2" type="text"></p>
+    <button onclick="calcPerimeter()">Calculate Perimeter</button>
+    <p id="newResult"></p>
+
+    <script>
+        function calcPerimeter(){
+            let newInput1 = Number(document.getElementById("input1").value);
+            let newInput2 = Number(document.getElementById("input2").value);
+            let newPerimeter = (newInput1 + newInput2) * 2;
+            document.getElementById("areaCalc").innerText = "The Perimeter is: " + newPerimeter;
+        }
+    </script>
+</body>
+</html>
