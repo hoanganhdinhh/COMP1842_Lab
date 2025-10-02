@@ -9,11 +9,6 @@
     <p>Enter input 1: <input id="input1" type="text"></p>
     <p>Enter input 2: <input id="input2" type="text"></p>
     <button onclick="calcRectangArea()">Calculate area</button>
-    <button onclick="calcAverage()">Calculate average</button>
-    <button onclick="calcBMI()">Calculate BMI</button>
-    <button onclick="calcPerimeter()">Calculate Perimeter</button>
-    <button onclick="FindMaxValue()">Calculate Max Value</button>
-    <button onclick="calcTotalMinute()">Calculate total munute</button>
     <p id="newResult"></p>
 
     <script>
@@ -23,42 +18,6 @@
             let newArea = newInput1 * newInput2;
             document.getElementById("newResult").innerText = "The area is: " + newArea;
         }
-
-        function calcAverage(){
-            let newInput1 = Number(document.getElementById("input1").value);
-            let newInput2 = Number(document.getElementById("input2").value);
-            let newAverage = (newInput1 + newInput2) / 2;
-            document.getElementById("newResult").innerText = "The Average is: " + newAverage;
-        }
-
-        function calcBMI(){
-            let newInput1 = Number(document.getElementById("input1").value);
-            let newInput2 = Number(document.getElementById("input2").value);
-            let newBMI = newInput1 / (newInput2 * newInput2);
-            document.getElementById("newResult").innerText = "The BMI is: " + newBMI;
-        }
-
-        function calcPerimeter(){
-            let newInput1 = Number(document.getElementById("input1").value);
-            let newInput2 = Number(document.getElementById("input2").value);
-            let newPerimeter = (newInput1 + newInput2) * 2;
-            document.getElementById("newResult").innerText = "The Perimeter is: " + newPerimeter;
-        }
-
-        function FindMaxValue(){
-            let newInput1 = Number(document.getElementById("input1").value);
-            let newInput2 = Number(document.getElementById("input2").value);
-            let newResult = Math.max(newInput1, newInput2);
-            document.getElementById("newResult").innerText = "The Max Value is: " + newResult;
-        }
-
-        function calcTotalMinute(){
-            let newInput1 = Number(document.getElementById("input1").value);
-            let newInput2 = Number(document.getElementById("input2").value);
-            let totalMinutes = (newInput1 * 60) + newInput2;
-            document.getElementById("newResult").innerText = "The Total Minutes is: " + totalMinutes;
-        }
-
     </script>
 </body>
 </html>
